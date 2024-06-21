@@ -28,8 +28,24 @@
     <script>
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            // Assume validation is done here
-            window.location.href = 'alumni.html';
+
+            // Check username and password
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Hardcoded credentials
+            var validUsername = 'admin';
+            var validPassword = 'password123';
+
+            if (username === validUsername && password === validPassword) {
+                // Redirect to alumni.html if credentials are correct
+                window.location.href = 'alumni.html';
+            } else {
+                alert('Invalid username or password. Please try again.');
+                // Optionally, clear the input fields
+                document.getElementById('username').value = '';
+                document.getElementById('password').value = '';
+            }
         });
     </script>
 </body>
