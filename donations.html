@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <link rel="stylesheet" href="donations.css">
+    <style>
+        .dollar-input {
+            position: relative;
+        }
+
+        .dollar-input:before {
+            content: '$';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .dollar-input input {
+            padding-left: 20px; /* Adjust padding to make space for the $ sign */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Donations</h1>
+        <nav>
+            <ul>
+                <li><a href="alumni.html">Alumni Page</a></li>
+                <li><a href="address.html">Address Information</a></li>
+                <li><a href="degree.html">Degree Information</a></li>
+                <li><a href="employment.html">Employment History</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="view-donations">
+            <h2>View Donations</h2>
+            <table>
+                <thead>
+                    <!-- Removed the table headers -->
+                </thead>
+                <tbody>
+                    <!-- Donation data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-donation">
+            <h2>Add New Donation</h2>
+            <form id="add-donation-form">
+                <label for="alumni-id">Alumni ID:</label>
+                <input type="text" id="alumni-id" name="alumni-id" required>
+                
+                <label for="donation-amount">Donation Amount:</label>
+                <div class="dollar-input">
+                    <input type="number" id="donation-amount" name="donation-amount" step="1" min="0.00" required>
+                </div>
+                
+                <label for="donation-date">Donation Date:</label>
+                <input type="date" id="donation-date" name="donation-date" required>
+                
+                <button type="submit">Add Donation</button>
+            </form>
+        </section>
+
+        <section id="update-donation">
+            <h2>Update Donation</h2>
+            <form id="update-donation-form">
+                <label for="update-id">Donation ID:</label>
+                <input type="text" id="update-id" name="update-id" required>
+                
+                <label for="update-donation-amount">Donation Amount:</label>
+                <div class="dollar-input">
+                    <input type="number" id="update-donation-amount" name="update-donation-amount" step="1" min="0.00">
+                </div>
+                
+                <label for="update-donation-date">Donation Date:</label>
+                <input type="date" id="update-donation-date" name="update-donation-date">
+                
+                <button type="submit">Update Donation</button>
+            </form>
+        </section>
+
+        <section id="delete-donation">
+            <h2>Delete Donation</h2>
+            <form id="delete-donation-form">
+                <label for="delete-id">Donation ID:</label>
+                <input type="text" id="delete-id" name="delete-id" required>
+                
+                <button type="submit">Delete Donation</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alumni Management System</p>
+    </footer>
+    <script>
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('input', function () {
+                let value = parseInt(this.value).toFixed(2);
+                this.value = isNaN(value) ? '' : value;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment History</title>
+    <link rel="stylesheet" href="employment.css">
+</head>
+<body>
+    <header>
+        <h1>Employment History</h1>
+        <nav>
+            <ul>
+                <li><a href="alumni.html">Alumni Page</a></li>
+                <li><a href="address.html">Address Information</a></li>
+                <li><a href="degree.html">Degree Information</a></li>
+                <li><a href="employment.html">Employment History</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="view-employment">
+            <h2>View Employment History</h2>
+            <table>
+                <thead>
+                    <!-- Removed the table headers -->
+                </thead>
+                <tbody>
+                    <!-- Employment data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-employment">
+            <h2>Add New Employment</h2>
+            <form id="add-employment-form">
+                <label for="alumni-id">Alumni ID:</label>
+                <input type="text" id="alumni-id" name="alumni-id" required>
+                
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required>
+                
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" required>
+                
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+                
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+                
+                <label for="current">Current:</label>
+                <input type="checkbox" id="current" name="current">
+                
+                <button type="submit">Add Employment</button>
+            </form>
+        </section>
+
+        <section id="update-employment">
+            <h2>Update Employment</h2>
+            <form id="update-employment-form">
+                <label for="update-id">Employment ID:</label>
+                <input type="text" id="update-id" name="update-id" required>
+                
+                <label for="update-company">Company:</label>
+                <input type="text" id="update-company" name="update-company">
+                
+                <label for="update-position">Position:</label>
+                <input type="text" id="update-position" name="update-position">
+                
+                <label for="update-start-date">Start Date:</label>
+                <input type="date" id="update-start-date" name="update-start-date">
+                
+                <label for="update-end-date">End Date:</label>
+                <input type="date" id="update-end-date" name="update-end-date">
+                
+                <label for="update-current">Current:</label>
+                <input type="checkbox" id="update-current" name="update-current">
+                
+                <button type="submit">Update Employment</button>
+            </form>
+        </section>
+
+        <section id="delete-employment">
+            <h2>Delete Employment</h2>
+            <form id="delete-employment-form">
+                <label for="delete-id">Employment ID:</label>
+                <input type="text" id="delete-id" name="delete-id" required>
+                
+                <button type="submit">Delete Employment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alumni Management System</p>
+    </footer>
+</body>
+</html>

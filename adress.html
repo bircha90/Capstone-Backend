@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Information</title>
+    <link rel="stylesheet" href="address.css"> <!-- Corrected: Added missing closing bracket and correct file name -->
+</head>
+<body>
+    <header>
+        <h1>Address Information</h1>
+        <nav>
+            <ul>
+                <li><a href="alumni.html">Alumni Page</a></li>
+                <li><a href="address.html">Address Information</a></li>
+                <li><a href="degree.html">Degree Information</a></li>
+                <li><a href="employment.html">Employment History</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="view-addresses">
+            <h2>View Addresses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Alumni ID</th>
+                        <th>Address Type</th>
+                        <th>Street</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip</th>
+                        <th>Country</th>
+                        <th>Primary</th>
+                        <th>Active</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Address data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-address">
+            <h2>Add New Address</h2>
+            <form id="add-address-form">
+                <label for="alumni-id">Alumni ID:</label>
+                <input type="text" id="alumni-id" name="alumni-id" required>
+                
+                <label for="address-type">Address Type:</label>
+                <input type="text" id="address-type" name="address-type" required>
+                
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required>
+                
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+                
+                <label for="primary">Primary:</label>
+                <input type="checkbox" id="primary" name="primary">
+                
+                <label for="active">Active:</label>
+                <input type="checkbox" id="active" name="active">
+                
+                <button type="submit">Add Address</button>
+            </form>
+        </section>
+
+        <section id="update-address">
+            <h2>Update Address</h2>
+            <form id="update-address-form">
+                <label for="update-id">Address ID:</label>
+                <input type="text" id="update-id" name="update-id" required>
+                
+                <label for="update-street">Street:</label>
+                <input type="text" id="update-street" name="update-street">
+                
+                <label for="update-city">City:</label>
+                <input type="text" id="update-city" name="update-city">
+                
+                <label for="update-state">State:</label>
+                <input type="text" id="update-state" name="update-state">
+                
+                <label for="update-zip">Zip Code:</label>
+                <input type="text" id="update-zip" name="update-zip">
+                
+                <label for="update-country">Country:</label>
+                <input type="text" id="update-country" name="update-country">
+                
+                <label for="update-primary">Primary:</label>
+                <input type="checkbox" id="update-primary" name="update-primary">
+                
+                <label for="update-active">Active:</label>
+                <input type="checkbox" id="update-active" name="update-active">
+                
+                <button type="submit">Update Address</button>
+            </form>
+        </section>
+
+        <section id="deactivate-address">
+            <h2>Deactivate Address</h2>
+            <form id="deactivate-address-form">
+                <label for="deactivate-id">Address ID:</label>
+                <input type="text" id="deactivate-id" name="deactivate-id" required>
+                
+                <button type="submit">Deactivate Address</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alumni Management System</p>
+    </footer>
+
+    <script src="../script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

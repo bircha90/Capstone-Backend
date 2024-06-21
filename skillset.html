@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillset</title>
+    <link rel="stylesheet" href="skillset.css">
+</head>
+<body>
+    <header>
+        <h1>Skillset</h1>
+        <nav>
+            <ul>
+                <li><a href="alumni.html">Alumni Page</a></li>
+                <li><a href="address.html">Address Information</a></li>
+                <li><a href="degree.html">Degree Information</a></li>
+                <li><a href="employment.html">Employment History</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="view-skillsets">
+            <h2>View Skillsets</h2>
+            <table>
+                <thead>
+                    <!-- Removed the table headers -->
+                </thead>
+                <tbody>
+                    <!-- Skillset data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-skillset">
+            <h2>Add New Skillset</h2>
+            <form id="add-skillset-form">
+                <label for="alumni-id">Alumni ID:</label>
+                <input type="text" id="alumni-id" name="alumni-id" required>
+                
+                <label for="skill">Skill:</label>
+                <input type="text" id="skill" name="skill" required>
+                
+                <button type="submit">Add Skillset</button>
+            </form>
+        </section>
+
+        <section id="update-skillset">
+            <h2>Update Skillset</h2>
+            <form id="update-skillset-form">
+                <label for="update-id">Skillset ID:</label>
+                <input type="text" id="update-id" name="update-id" required>
+                
+                <label for="update-skill">Skill:</label>
+                <input type="text" id="update-skill" name="update-skill">
+                
+                <button type="submit">Update Skillset</button>
+            </form>
+        </section>
+
+        <section id="delete-skillset">
+            <h2>Delete Skillset</h2>
+            <form id="delete-skillset-form">
+                <label for="delete-id">Skillset ID:</label>
+                <input type="text" id="delete-id" name="delete-id" required>
+                
+                <button type="submit">Delete Skillset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alumni Management System</p>
+    </footer>
+</body>
+</html>

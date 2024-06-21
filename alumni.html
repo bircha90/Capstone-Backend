@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Management</title>
+    <link rel="stylesheet" href="alumni.css">
+</head>
+<body>
+    <header>
+        <h1>Alumni Management</h1>
+        <nav>
+            <ul>
+                <li><a href="alumni.html">Alumni Page</a></li>
+                <li><a href="address.html">Address Information</a></li>
+                <li><a href="degree.html">Degree Information</a></li>
+                <li><a href="employment.html">Employment History</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <section id="view-alumni">
+            <h2>View Alumni</h2>
+            <table>
+                <thead>
+                    <!-- Removed the table headers -->
+                </thead>
+                <tbody>
+                    <!-- Alumni data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-alumni">
+            <h2>Add New Alumni</h2>
+            <form id="add-alumni-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <button type="submit">Add Alumni</button>
+            </form>
+        </section>
+
+        <section id="update-alumni">
+            <h2>Update Alumni</h2>
+            <form id="update-alumni-form">
+                <label for="update-id">Alumni ID:</label>
+                <input type="text" id="update-id" name="update-id" required>
+                
+                <label for="update-name">Name:</label>
+                <input type="text" id="update-name" name="update-name">
+                
+                <label for="update-email">Email:</label>
+                <input type="email" id="update-email" name="update-email">
+                
+                <label for="update-phone">Phone:</label>
+                <input type="tel" id="update-phone" name="update-phone">
+                
+                <button type="submit">Update Alumni</button>
+            </form>
+        </section>
+
+        <section id="delete-alumni">
+            <h2>Delete Alumni</h2>
+            <form id="delete-alumni-form">
+                <label for="delete-id">Alumni ID:</label>
+                <input type="text" id="delete-id" name="delete-id" required>
+                
+                <button type="submit">Delete Alumni</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alumni Management System</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Information</title>
+    <link rel="stylesheet" href="degree.css">
+</head>
+<body>
+    <header>
+        <h1>Degree Information</h1>
+        <nav>
+            <ul>
+                <li><a href="alumni.html">Alumni Page</a></li>
+                <li><a href="address.html">Address Information</a></li>
+                <li><a href="degree.html">Degree Information</a></li>
+                <li><a href="employment.html">Employment History</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="view-degrees">
+            <h2>View Degrees</h2>
+            <table>
+                <thead>
+                    <!-- Removed the table headers -->
+                </thead>
+                <tbody>
+                    <!-- Degree data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-degree">
+            <h2>Add New Degree</h2>
+            <form id="add-degree-form">
+                <label for="alumni-id">Alumni ID:</label>
+                <input type="text" id="alumni-id" name="alumni-id" required>
+                
+                <label for="degree-type">Degree Type:</label>
+                <input type="text" id="degree-type" name="degree-type" required>
+                
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" required>
+                
+                <label for="year-obtained">Year Obtained:</label>
+                <input type="text" id="year-obtained" name="year-obtained" required>
+                
+                <button type="submit">Add Degree</button>
+            </form>
+        </section>
+
+        <section id="update-degree">
+            <h2>Update Degree</h2>
+            <form id="update-degree-form">
+                <label for="update-id">Degree ID:</label>
+                <input type="text" id="update-id" name="update-id" required>
+                
+                <label for="update-degree-type">Degree Type:</label>
+                <input type="text" id="update-degree-type" name="update-degree-type">
+                
+                <label for="update-institution">Institution:</label>
+                <input type="text" id="update-institution" name="update-institution">
+                
+                <label for="update-year-obtained">Year Obtained:</label>
+                <input type="text" id="update-year-obtained" name="update-year-obtained">
+                
+                <button type="submit">Update Degree</button>
+            </form>
+        </section>
+
+        <section id="delete-degree">
+            <h2>Delete Degree</h2>
+            <form id="delete-degree-form">
+                <label for="delete-id">Degree ID:</label>
+                <input type="text" id="delete-id" name="delete-id" required>
+                
+                <button type="submit">Delete Degree</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alumni Management System</p>
+    </footer>
+</body>
+</html>
